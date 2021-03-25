@@ -1,6 +1,14 @@
 #include <stdio.h>
 #include <stdbool.h>
+int notmain();
 int main()
+{
+	int x;
+	loop:
+		x = notmain();
+		goto loop;
+}
+int notmain()
 {
 	int input, number = 1, check = 2;
 	bool skip;
