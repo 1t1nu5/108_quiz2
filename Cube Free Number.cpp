@@ -12,6 +12,21 @@ int main()
 		while (number <= input)
 		{
 			int test = check;
+			for (int i = 2; i < check; i++)
+			{
+				if (test % i == 0)
+				{
+					test /= i;
+					if (test % i == 0)
+					{
+						test /= i;
+						if (test % i == 0)
+						{
+							
+						}
+					}
+				}
+			}
 		}
 	}
 	return 0;
