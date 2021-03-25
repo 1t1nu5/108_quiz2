@@ -4,6 +4,8 @@ int main()
 {
 	int input, number = 2, check = 2;
 	bool skip;
+	portal:
+		printf("\n");
 	scanf("%d", &input);
 	if (input == 1)
 	{
@@ -37,11 +39,11 @@ int main()
 			else if (skip == true && check == input)
 			{
 				printf("Not Cube Free");
-				return 0;
+				goto portal;
 			}
 			check++;
 		}
 	}
 	printf("%d", number);
-	return 0;
+	goto portal;
 }
