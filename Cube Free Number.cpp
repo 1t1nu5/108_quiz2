@@ -6,8 +6,8 @@ int meow()
 }
 int main()
 {
-	int input, number = 1, check = 2;
-	bool skip;
+	int input, number = 1, check;
+	bool skip, first = true;
 	printf("\n");
 	scanf("%d", &input);
 	if (input == 1)
@@ -17,32 +17,46 @@ int main()
 	}
 	else
 	{
-		while (check <= input)
-		{
-			skip = false;
-			int test = check;
-			for (int i = 2; i < check; i++)
+		revenir:
+			while (check < input)
 			{
-				if (i*i*i > test)
+				if (first == true)
 				{
-					break;
+					check = input;
 				}
-				else if (test % (i*i*i) == 0)
+				skip = false;
+				int test = check;
+				for (int i = 2; i < check; i++)
 				{
-					skip = true;
+					if (i*i*i > test)
+					{
+						break;
+					}
+					else if (test % (i*i*i) == 0)
+					{
+						skip = true;
+					}
 				}
+				if (skip == false)
+				{
+					number++;
+				}
+				else if (first == true)
+				{
+					if (skip == true)
+					{
+						printf("Not Cube Free");
+						return 0;
+					}
+					else
+					{
+						first = false;
+						check = 2;
+						goto revenir;
+					}
+				}
+				check++;
 			}
-			if (skip == false)
-			{
-				number++;
-			}
-			else if (skip == true && check == input)
-			{
-				printf("Not Cube Free");
-				return 0;
-			}
-			check++;
-		}
 	}
 	printf("%d", number);
 	return 0;
