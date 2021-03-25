@@ -1,6 +1,10 @@
 #include <stdio.h>
-int main()
+int dectochar(int get)
 {
+	
+}
+int main()
+{	
 	
 	return 0;
 }
