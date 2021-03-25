@@ -34,6 +34,11 @@ int main()
 			{
 				number++;
 			}
+			else if (skip == true; check == input)
+			{
+				printf("Not Cube Free");
+				return 0;
+			}
 			check++;
 		}
 	}
