@@ -5,10 +5,10 @@ int main()
 	int command[3];
 	scanf("%d", &line);
 	scanf("%d", &code);
-	int cloth[line][70] = {} // line, column
+	int cloth[line][70] = {}; // line, column
 	for (int i = 0; i < line; i++)
 	{
-		for (int j = 0; j < 70; j+++)
+		for (int j = 0; j < 70; j++)
 		{
 			cloth[i][j] = 'o';
 		}
@@ -24,9 +24,9 @@ int main()
 	}
 	for (int i = 0; i < line; i++)
 	{
-		for (int j = 0; j < 70; j+++)
+		for (int j = 0; j < 70; j++)
 		{
-			printf("%c", cloth[i][j])
+			printf("%c", cloth[i][j]);
 		}
 		printf("\n");
 	}
