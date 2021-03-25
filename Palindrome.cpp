@@ -42,17 +42,17 @@ int main()
 		}
 		else if (digit == 3)
 		{
-			if (i/100 == i%100)
+			if (i/100 == i%10)
 			{
 				printf("%d", i);
 			}
 		}
 		else if (digit == 4)
 		{
-			if (i/1000 == i%1000)
+			if (i/1000 == i%10)
 			{
 				int check = i;
-				check -= i/1000 + i%1000
+				check -= i/1000 + i%10;
 				check /= 10;
 				if (i/10 == i%10)
 				{
