@@ -7,7 +7,7 @@ int main()
 	scanf("%d", &code);
 	while (code > 0)
 	{
-		
+		scanf("%d %d %d", &command[0], &command[1], &command[2]);
 		code--;
 	}
 	return 0;
