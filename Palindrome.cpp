@@ -35,7 +35,10 @@ int main()
 		}
 		else if (digit == 2)
 		{
-			
+			if (digit/10 == digit%10)
+			{
+				printf("%d", i);
+			}
 		}
 	}
 	return 0;
