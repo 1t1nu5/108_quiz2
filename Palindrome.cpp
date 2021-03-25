@@ -1,7 +1,6 @@
 #include <stdio.h>
 int main()
 {
-	goto portal;
 	int limit, digit = 1;
 	scanf("%d", &limit);
 	for (int i = 1; i <= limit; i++)
@@ -76,8 +75,6 @@ int main()
 		}
 		else if (digit == 6)
 		{
-			portal:
-				i = 100000;
 			if (i/100000 == i%10)
 			{
 				int check = i;
