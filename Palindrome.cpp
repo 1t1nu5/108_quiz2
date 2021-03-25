@@ -47,6 +47,19 @@ int main()
 				printf("%d", i);
 			}
 		}
+		else if (digit == 4)
+		{
+			if (i/1000 == i%1000)
+			{
+				int check = i;
+				check -= i/1000 + i%1000
+				check /= 10;
+				if (i/10 == i%10)
+				{
+					printf("%d", i);
+				}
+			}
+		}
 	}
 	return 0;
 }
