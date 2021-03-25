@@ -1,5 +1,9 @@
 #include <stdio.h>
 #include <stdbool.h>
+int meow()
+{
+	printf("meow");
+}
 int main()
 {
 	int input, number = 1, check = 2;
