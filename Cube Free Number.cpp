@@ -32,6 +32,26 @@ int main()
 			}
 			number++;
 		}
+		if (check < input)
+		{
+			check++;
+			test = check;
+			for (int i = 2; i <= test; i++)
+			{
+				if (test % i == 0)
+				{
+					test /= i;
+					if (test % i == 0)
+					{
+						test /= i;
+						if (test % i == 0)
+						{
+							printf("Not Cube Free");
+						}
+					}
+				}
+			}
+		}
 	}
 	
 	return 0;
