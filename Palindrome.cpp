@@ -66,7 +66,7 @@ int main()
 			{
 				int check = i;
 				check -= i/10000 + i%10;
-				check /= 100;
+				check /= 10;
 				if (i/100 == i%10)
 				{
 					printf("%d", i);
