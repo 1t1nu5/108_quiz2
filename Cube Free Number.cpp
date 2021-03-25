@@ -10,9 +10,10 @@ int main()
 	}
 	else
 	{
-		check = 2;
-		while (check <= input)
+		check = 1;
+		while (check < input)
 		{
+			check++;
 			test = check;
 			for (int i = 2; i <= test; i++)
 			{
@@ -24,12 +25,14 @@ int main()
 						test /= i;
 						if (test % i == 0)
 						{
-							
+							continue;
 						}
 					}
 				}
 			}
+			number++;
 		}
 	}
+	
 	return 0;
 }
