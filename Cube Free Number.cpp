@@ -10,6 +10,7 @@ int main()
 	if (input == 1)
 	{
 		printf("1");
+		goto portal;
 	}
 	else
 	{
