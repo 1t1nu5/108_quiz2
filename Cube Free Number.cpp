@@ -23,7 +23,7 @@ int main()
 				{
 					break;
 				}
-				if (test % (i*i*i) == 0)
+				else if (test % (i*i*i) == 0)
 				{
 					skip = true;
 				}
