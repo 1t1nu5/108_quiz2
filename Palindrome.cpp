@@ -29,6 +29,14 @@ int main()
 		{
 			digit = 7;
 		}
+		if (digit == 1)
+		{
+			printf("%d", i);
+		}
+		else if (digit == 2)
+		{
+			
+		}
 	}
 	return 0;
 }
