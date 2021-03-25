@@ -31,20 +31,20 @@ int main()
 		}
 		if (digit == 1)
 		{
-			printf("%d", i);
+			printf("%d ", i);
 		}
 		else if (digit == 2)
 		{
 			if (it/10 == i%10)
 			{
-				printf("%d", i);
+				printf("%d ", i);
 			}
 		}
 		else if (digit == 3)
 		{
 			if (i/100 == i%10)
 			{
-				printf("%d", i);
+				printf("%d ", i);
 			}
 		}
 		else if (digit == 4)
@@ -54,9 +54,9 @@ int main()
 				int check = i;
 				check -= i/1000 + i%10;
 				check /= 10;
-				if (i/10 == i%10)
+				if (check/10 == check%10)
 				{
-					printf("%d", i);
+					printf("%d ", i);
 				}
 			}
 		}
@@ -67,10 +67,19 @@ int main()
 				int check = i;
 				check -= i/10000 + i%10;
 				check /= 10;
-				if (i/100 == i%10)
+				if (check/100 == check%10)
 				{
-					printf("%d", i);
+					printf("%d ", i);
 				}
+			}
+		}
+		else if (digit == 6)
+		{
+			if (i/100000 == i%10)
+			{
+				int check = i;
+				check -= i/100000 + i%10;
+				check / 10;
 			}
 		}
 	}
