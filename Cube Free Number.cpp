@@ -52,7 +52,7 @@ int main()
 				}
 			}
 		}
-		printf("%d", &number);
+		printf("%d", number);
 		return 0;
 	}
 }
