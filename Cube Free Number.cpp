@@ -2,7 +2,7 @@
 #include <stdbool.h>
 int main()
 {
-	int input, number = 2, check = 2;
+	int input, number = 1, check = 2;
 	bool skip;
 	portal:
 		printf("\n");
