@@ -60,6 +60,19 @@ int main()
 				}
 			}
 		}
+		else if (digit == 5)
+		{
+			if (i/10000 == i%10)
+			{
+				int check = i;
+				check -= i/10000 + i%10;
+				check /= 100;
+				if (i/100 == i%10)
+				{
+					printf("%d", i);
+				}
+			}
+		}
 	}
 	return 0;
 }
