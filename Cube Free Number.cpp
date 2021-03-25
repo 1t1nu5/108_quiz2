@@ -4,7 +4,7 @@ int main()
 {
 	int input, number = 2, check = 2;
 	bool skip;
-	scanf("%d", input);
+	scanf("%d", &input);
 	if (input == 1)
 	{
 		printf("1");
@@ -34,7 +34,7 @@ int main()
 			{
 				number++;
 			}
-			else if (skip == true; check == input)
+			else if (skip == true && check == input)
 			{
 				printf("Not Cube Free");
 				return 0;
@@ -42,5 +42,6 @@ int main()
 			check++;
 		}
 	}
+	printf("%d", number);
 	return 0;
 }
