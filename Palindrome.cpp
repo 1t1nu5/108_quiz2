@@ -91,6 +91,24 @@ int main()
 				}
 			}
 		}
+		else
+		{
+			if (i/1000000 == i%10)
+			{
+				int check = i;
+				check -= i/1000000 + i%10;
+				check / 10;
+				if (check/10000 == check%10)
+				{
+					check -= check/10000 + check%10;
+					check /= 10;
+					if (check/100 == check%10)
+					{
+						printf("%d ", i);
+					}
+				}
+			}
+		}
 	}
 	return 0;
 }
