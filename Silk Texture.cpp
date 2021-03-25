@@ -1,4 +1,8 @@
 #include <stdio.h>
+void meow()
+{
+	printf("meow");
+}
 int main()
 {
 	int line, col, code;
