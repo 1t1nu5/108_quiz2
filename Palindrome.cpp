@@ -3,7 +3,7 @@ int main()
 {	
 	int limit, digit = 1;
 	scanf("%d", &limit);
-	for (int i = 1; i <= limit)
+	for (int i = 1; i <= limit; i++)
 	{
 		if (digit == 1 && i >= 10)
 		{
@@ -35,7 +35,14 @@ int main()
 		}
 		else if (digit == 2)
 		{
-			if (digit/10 == digit%10)
+			if (it/10 == i%10)
+			{
+				printf("%d", i);
+			}
+		}
+		else if (digit == 3)
+		{
+			if (i/100 == i%100)
 			{
 				printf("%d", i);
 			}
