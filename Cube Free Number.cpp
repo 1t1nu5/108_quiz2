@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-	int number = 2, input, check, test;
+	int number = 1, input, check, test;
 	scanf("%d", &input);
 	if (input == 1)
 	{
@@ -25,30 +25,29 @@ int main()
 						test /= i;
 						if (test % i == 0)
 						{
+							printf("n");
 							continue;
 						}
 					}
 				}
 			}
+			printf("p");
 			number++;
 		}
-		if (check < input)
+		check++;
+		test = check;
+		for (int i = 2; i <= test; i++)
 		{
-			check++;
-			test = check;
-			for (int i = 2; i <= test; i++)
+			if (test % i == 0)
 			{
+				test /= i;
 				if (test % i == 0)
 				{
 					test /= i;
 					if (test % i == 0)
 					{
-						test /= i;
-						if (test % i == 0)
-						{
-							printf("Not Cube Free");
-							return 0;
-						}
+						printf("Not Cube Free");
+						return 0;
 					}
 				}
 			}
