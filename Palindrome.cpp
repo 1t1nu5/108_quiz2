@@ -13,19 +13,19 @@ int main()
 		{
 			digit = 3;
 		}
-		else if (digit == 2 && i >= 1000)
+		else if (digit == 3 && i >= 1000)
 		{
 			digit = 4;
 		}
-		else if (digit == 2 && i >= 10000)
+		else if (digit == 4 && i >= 10000)
 		{
 			digit = 5;
 		}
-		else if (digit == 2 && i >= 100000)
+		else if (digit == 5 && i >= 100000)
 		{
 			digit = 6;
 		}
-		else
+		else if (digit == 6 && i == 1000000)
 		{
 			digit = 7;
 		}
@@ -35,7 +35,7 @@ int main()
 		}
 		else if (digit == 2)
 		{
-			if (it/10 == i%10)
+			if (i/10 == i%10)
 			{
 				printf("%d ", i);
 			}
