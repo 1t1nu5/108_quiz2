@@ -82,7 +82,7 @@ int main()
 				check / 10;
 				if (check/1000 == check%10)
 				{
-					check -= check/1000 + check%10;
+					check -= check/1000*1000 + check%10;
 					check /= 10;
 					if (check/10 == check%10)
 					{
@@ -91,7 +91,7 @@ int main()
 				}
 			}
 		}
-		else
+		else if (digit == 7)
 		{
 			if (i/1000000 == i%10)
 			{
