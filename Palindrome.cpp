@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main()
-{	
+{
 	int limit, digit = 1;
 	scanf("%d", &limit);
 	for (int i = 1; i <= limit; i++)
@@ -52,7 +52,7 @@ int main()
 			if (i/1000 == i%10)
 			{
 				int check = i;
-				check -= i/1000 + i%10;
+				check -= i/1000*1000 + i%10;
 				check /= 10;
 				if (check/10 == check%10)
 				{
@@ -65,7 +65,7 @@ int main()
 			if (i/10000 == i%10)
 			{
 				int check = i;
-				check -= i/10000 + i%10;
+				check -= i/10000*10000 + i%10;
 				check /= 10;
 				if (check/100 == check%10)
 				{
@@ -78,7 +78,7 @@ int main()
 			if (i/100000 == i%10)
 			{
 				int check = i;
-				check -= i/100000 + i%10;
+				check -= i/100000*100000 + i%10;
 				check / 10;
 				if (check/1000 == check%10)
 				{
@@ -96,7 +96,7 @@ int main()
 			if (i/1000000 == i%10)
 			{
 				int check = i;
-				check -= i/1000000 + i%10;
+				check -= i/1000000*1000000 + i%10;
 				check / 10;
 				if (check/10000 == check%10)
 				{
