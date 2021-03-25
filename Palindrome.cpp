@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-	int limit, digit = 1;
+	int limit, digit = 1, total = 0;
 	scanf("%d", &limit);
 	for (int i = 1; i <= limit; i++)
 	{
@@ -31,20 +31,20 @@ int main()
 		}
 		if (digit == 1)
 		{
-			printf("%d ", i);
+			total++;
 		}
 		else if (digit == 2)
 		{
 			if (i/10 == i%10)
 			{
-				printf("%d ", i);
+				total++;
 			}
 		}
 		else if (digit == 3)
 		{
 			if (i/100 == i%10)
 			{
-				printf("%d ", i);
+				total++;
 			}
 		}
 		else if (digit == 4)
@@ -56,7 +56,7 @@ int main()
 				check /= 10;
 				if (check/10 == check%10)
 				{
-					printf("%d ", i);
+					total++;
 				}
 			}
 		}
@@ -69,7 +69,7 @@ int main()
 				check /= 10;
 				if (check/100 == check%10)
 				{
-					printf("%d ", i);
+					total++;
 				}
 			}
 		}
@@ -86,7 +86,7 @@ int main()
 					check /= 10;
 					if (check/10 == check%10)
 					{
-						printf("%d ", i);
+						total++;
 					}
 				}
 			}
@@ -104,11 +104,12 @@ int main()
 					check /= 10;
 					if (check/100 == check%10)
 					{
-						printf("%d ", i);
+						total++;
 					}
 				}
 			}
 		}
 	}
+	printf("%d", total);
 	return 0;
 }
