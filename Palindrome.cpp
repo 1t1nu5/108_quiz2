@@ -80,6 +80,15 @@ int main()
 				int check = i;
 				check -= i/100000 + i%10;
 				check / 10;
+				if (check/1000 == check%10)
+				{
+					check -= check/1000 + check%10;
+					check /= 10;
+					if (check/10 == check%10)
+					{
+						printf("%d ", i);
+					}
+				}
 			}
 		}
 	}
