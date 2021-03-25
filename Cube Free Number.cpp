@@ -37,11 +37,7 @@ int main()
 						skip = true;
 					}
 				}
-				if (skip == false)
-				{
-					number++;
-				}
-				else if (first == true)
+				if (first == true)
 				{
 					if (skip == true)
 					{
@@ -52,8 +48,13 @@ int main()
 					{
 						first = false;
 						check = 2;
+						number++;
 						goto revenir;
 					}
+				}
+				if (skip == false)
+				{
+					number++;
 				}
 				check++;
 			}
