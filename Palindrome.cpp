@@ -1,4 +1,8 @@
 #include <stdio.h>
+void meow()
+{
+	printf("meow");
+}
 int main()
 {
 	int limit, digit = 1, total = 0;
