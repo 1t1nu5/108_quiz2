@@ -16,6 +16,10 @@ int main()
 	while (code > 0)
 	{
 		scanf("%d %d %d", &command[0], &command[1], &command[2]);
+		for (int i = 0; i < command[2]; i++)
+		{
+			cloth[command[0]-1][command[1]-1+i] = 'x';
+		}
 		code--;
 	}
 	return 0;
