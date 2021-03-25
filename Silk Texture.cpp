@@ -22,5 +22,13 @@ int main()
 		}
 		code--;
 	}
+	for (int i = 0; i < line; i++)
+	{
+		for (int j = 0; j < 70; j+++)
+		{
+			printf("%c", cloth[i][j])
+		}
+		printf("\n");
+	}
 	return 0;
 }
