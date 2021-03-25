@@ -27,6 +27,10 @@ int notmain()
 			int test = check;
 			for (int i = 2; i < check; i++)
 			{
+				if (i*i*i > test)
+				{
+					break;
+				}
 				if (test % (i*i*i) == 0)
 				{
 					skip = true;
