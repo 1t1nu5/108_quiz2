@@ -4,13 +4,12 @@ int main()
 {
 	int input, number = 1, check = 2;
 	bool skip;
-	portal:
-		printf("\n");
+	printf("\n");
 	scanf("%d", &input);
 	if (input == 1)
 	{
 		printf("1");
-		goto portal;
+		return 0;
 	}
 	else
 	{
@@ -40,11 +39,11 @@ int main()
 			else if (skip == true && check == input)
 			{
 				printf("Not Cube Free");
-				goto portal;
+				return 0;
 			}
 			check++;
 		}
 	}
 	printf("%d", number);
-	goto portal;
+	return 0;
 }
