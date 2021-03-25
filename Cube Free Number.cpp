@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-	int number, input;
+	int number = 2, input, check;
 	scanf("%d", &input);
 	if (input == 1)
 	{
@@ -10,7 +10,11 @@ int main()
 	}
 	else
 	{
-		
+		check = 2;
+		while (check <= input)
+		{
+			
+		}
 	}
 	return 0;
 }
