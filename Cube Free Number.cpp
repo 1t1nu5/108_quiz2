@@ -47,12 +47,13 @@ int main()
 						if (test % i == 0)
 						{
 							printf("Not Cube Free");
+							return 0;
 						}
 					}
 				}
 			}
 		}
+		printf("%d", &number);
+		return 0;
 	}
-	
-	return 0;
 }
